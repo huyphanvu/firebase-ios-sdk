@@ -50,6 +50,7 @@
 + (BOOL)hasBundleIdentifierPrefix:(NSString *)bundleIdentifier inBundles:(NSArray *)bundles {
   for (NSBundle *bundle in bundles) {
     // This allows app extensions that have the app's bundle as their prefix to pass this test.
+    NSLog("Current bundle identifier: %@", bundle.bundleIdentifier);
     NSString *applicationBundleIdentifier = bundle.bundleIdentifier;
 //        [GULAppEnvironmentUtil isAppExtension]
 //            ? [self bundleIdentifierByRemovingLastPartFrom:bundle.bundleIdentifier]
