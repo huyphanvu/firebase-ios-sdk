@@ -60,6 +60,7 @@
       return YES;
     }
   }
+  NSLog("bundles is empty");
   return NO;
 }
 
